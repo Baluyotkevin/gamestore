@@ -1,0 +1,32 @@
+GET http://localhost:5245/games
+
+###
+GET http://localhost:5245/games/1
+
+###
+
+POST http://localhost:5245/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+
+PUT http://localhost:5245/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter I",
+    "genre": "Kids and family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+### 
+
+DELETE http://localhost:5245/games/1
